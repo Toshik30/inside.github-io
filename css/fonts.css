@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Beausite-Regular";
+    src: url('../fonts/BeausiteRegular.ttf') format('opentype');
+}
+@font-face {
+    font-family: "Beausite-Medium";
+    src: url('../fonts/BeausiteMedium.ttf') format('opentype');
+}
+@font-face {
+    font-family: "Beausite-Bold";
+    src: url('../fonts/BeausiteBold.ttf') format('opentype');
+}
+@font-face {
+    font-family: "Avenir";
+    src: url('../fonts/Avenir.ttf') format('opentype');
+}
