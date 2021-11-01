@@ -84,7 +84,7 @@ function elementInViewport(el) {
 
 
 switch (location.pathname) {
-  case '/who/':
+  case '/inside.github.io/who/':
     const heading = document.querySelector('h1.primary-text'),
           blackSkinBLock = document.querySelector('.black-skin'),
           headingBlackSkin = blackSkinBLock.querySelector('.primary-text');
@@ -101,7 +101,7 @@ switch (location.pathname) {
     });
   break;
 
-  case '/':
+  case '/inside.github.io/':
     const arrImg = ['./img/bg/photo/swipper1.png', 
                 './img/bg/photo/swipper2.png', 
                 './img/bg/photo/swipper3.png', 
@@ -157,7 +157,7 @@ switch (location.pathname) {
       });
     }
     break;
-    case '/projects/':
+    case '/inside.github.io/projects/':
       const dropedText = document.querySelector('#droped-text');
         dropedText.innerHTML = dropedText.textContent.replace(/\S/g, "<span>$&</span>");
 
@@ -189,7 +189,7 @@ switch (location.pathname) {
           delay: anime.stagger(20),
         });
         break;
-    case '/what/':
+    case '/inside.github.io/what/':
       const whoCtn  = document.querySelector('.who-ctn');
       whoCtn.classList.add('anim-bg-right');
 
