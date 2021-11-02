@@ -345,7 +345,7 @@
     }
   }
   .who-ctn {
-    background-position: 44% 63%;
+    background-size: auto;
     margin: 40px 0px;
     background: url(../img/bg/who-bg.png);
     background-repeat: no-repeat;
