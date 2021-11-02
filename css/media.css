@@ -8,6 +8,9 @@
   .container {
     padding: 0px 20px;
   }
+  header .container {
+    padding: 0 10px;
+  }
   .info-and-social {
     display: none;
   }
@@ -252,6 +255,12 @@
     -webkit-text-stroke: 1px #000000;
     line-height: 37.8px;
   }
+  .active-navigation .navigation-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    pointer-events: none;
+  }
   .active-navigation .navigation-wrapper .nav-item {
     padding: 20px 0px;
   }
@@ -260,6 +269,9 @@
     line-height: 36px;
   }
   .active-navigation .navigation-wrapper .nav-item a:after {
+    display: none;
+  }
+  .active-navigation .navigation-wrapper .nav-item a .cirl {
     display: none;
   }
   .active-navigation .social-media-nav {
@@ -352,6 +364,8 @@
     background: url(../img/bg/black-skin-mob.png);
     background-repeat: no-repeat;
     margin: 30px auto 40px;
+    background-size: cover;
+    background-position: center;
   }
   .black-skin .black-skin-ctn .primary-text {
     font-size: 48px;
@@ -391,7 +405,8 @@
   }
   .life-work {
     background: url(../img/bg/life-work-bg-mob.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     margin: 70px auto 70px;
   }
@@ -420,6 +435,9 @@
     margin-top: -7px;
     margin-bottom: 20px;
   }
+  .who-number-3 .who-one-text p {
+    max-width: 400px;
+  }
   .who-number-3 .who-one-text p:nth-child(3) {
     margin: 20px 0px 0px;
   }
@@ -446,6 +464,9 @@
   .who-number-4 .who-one-text h4 {
     margin-top: -7px;
     margin-bottom: 20px;
+  }
+  .who-number-4 .who-one-text p {
+    max-width: 400px;
   }
   .who-number-4 .who-one-text p:nth-child(3) {
     margin: 20px 0px 0px;
@@ -507,11 +528,11 @@
     left: auto;
     right: 0;
   }
-  .active-navigation {
-    top: 75px;
-  }
   .active-navigation .navigation-wrapper {
     margin-top: 70px;
+  }
+  .activated-nav .navigation-wrapper {
+    pointer-events: auto;
   }
   .what-section .who-ctn {
     background: url(../img/bg/what-bg-mob.png);
@@ -548,6 +569,7 @@
     line-height: 48px;
   }
   .us-team {
+    overflow: hidden;
     padding: 70px 0px;
   }
   .us-team .us-team-heading {
