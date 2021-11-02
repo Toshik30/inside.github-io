@@ -2066,7 +2066,7 @@ section .title-places {
 }
 
 .black-skin {
-  background: url(/./img/bg/black-skin.png);
+  background: url(../img/bg/black-skin.png);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 70px auto 100px;
