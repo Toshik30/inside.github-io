@@ -347,6 +347,10 @@
   .who-ctn {
     background-position: 44% 63%;
     margin: 40px 0px;
+    background: url(../img/bg/who-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
   }
   .who-ctn .heading-text-block .primary-text {
     font-size: 48px;
