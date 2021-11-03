@@ -8,9 +8,6 @@
   .container {
     padding: 0px 20px;
   }
-  header .container {
-    padding: 0 10px;
-  }
   .info-and-social {
     display: none;
   }
@@ -345,12 +342,8 @@
     }
   }
   .who-ctn {
-    background-size: auto;
+    background-position: 44% 63%;
     margin: 40px 0px;
-    background: url(../img/bg/who-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    
   }
   .who-ctn .heading-text-block .primary-text {
     font-size: 48px;
@@ -672,6 +665,12 @@
   }
   .about-gallery .description-block .description-item p {
     margin-bottom: 10px;
+  }
+  .about-gallery .description-bar p:nth-child(2) {
+    margin: 0;
+  }
+  .gallery .gallery-main-ctn {
+    margin-top: 120px;
   }
 }
 
