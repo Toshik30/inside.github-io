@@ -403,7 +403,8 @@
   .who-number-1 .slider .slick-prev {
     left: calc(100% - 161px);
   }
-  .life-work {
+  
+  {
     background: url(../img/bg/life-work-bg-mob.png);
     background-size: cover;
     background-position: center;
@@ -2208,7 +2209,7 @@ section .title-places {
 }
 
 .life-work {
-  background: url(/./img/bg/life-work-bg.png);
+  background: url(../img/bg/life-work-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
