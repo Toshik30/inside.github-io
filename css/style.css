@@ -403,8 +403,7 @@
   .who-number-1 .slider .slick-prev {
     left: calc(100% - 161px);
   }
-  
-  {
+  .life-work {
     background: url(../img/bg/life-work-bg-mob.png);
     background-size: cover;
     background-position: center;
@@ -727,8 +726,13 @@ a {
 }
 
 header {
-  position: relative;
+  position: fixed;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 5;
+  height: 61px;
 }
 
 .brl {
@@ -765,6 +769,10 @@ header {
 
 .dark-theme .brl {
   border-left: 1px solid #ffffff;
+}
+
+.dark-theme header {
+  background: transparent;
 }
 
 .dark-theme .mobile-logo svg path {
@@ -838,6 +846,10 @@ header {
   }
 }
 
+.two-statement header {
+  background: transparent;
+}
+
 .two-statement .brl {
   border-left: 1px solid #ffffff;
 }
@@ -881,6 +893,10 @@ header {
   transition: 1s ease-in-out;
 }
 
+.dark-theme-three header {
+  background: transparent;
+}
+
 .dark-theme-three .brl {
   border-left: 1px solid #ffffff;
 }
@@ -911,6 +927,10 @@ header {
 
 .dark-theme-three .header-wrapper .menu .menu-btn span {
   background: #ffffff;
+}
+
+.main-ctn {
+  padding-top: 100px;
 }
 
 .heading-text-block {
@@ -1057,7 +1077,6 @@ header {
 .active-navigation {
   position: absolute;
   width: 100%;
-  background: #ffffff;
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-transform: translateY(-110%);
@@ -1068,7 +1087,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 61px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1137,10 +1156,11 @@ header {
 }
 
 .activated-nav {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
   -webkit-transition: .8s;
   transition: .8s;
+  background: #ffffff;
 }
 
 .slider-wrapper .slider-item {
@@ -2472,7 +2492,7 @@ section .title-places {
 }
 
 #team-header {
-  position: absolute;
+  background: #000000;
   width: 100%;
 }
 
