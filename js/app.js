@@ -7,7 +7,7 @@ burgerBtn.addEventListener('click', () => {
     body.classList.toggle('overflow-y')
 });
 
-
+const header = document.querySelector('header');
 
 const updateProperties = (elem, state) => {
     elem.style.setProperty('--x', `${state.x}px`)
@@ -84,7 +84,7 @@ function elementInViewport(el) {
 
 
 switch (location.pathname) {
-  case '/inside.github.io/who/':
+  case '/who/':
     const heading = document.querySelector('h1.primary-text'),
           blackSkinBLock = document.querySelector('.black-skin'),
           headingBlackSkin = blackSkinBLock.querySelector('.primary-text');
@@ -101,7 +101,18 @@ switch (location.pathname) {
     });
   break;
 
-  case '/inside.github.io/':
+  case '/':
+  
+    window.addEventListener('scroll', () => {
+      if(window.pageYOffset >= 450) {
+        header.classList.add('bg-white')
+      }
+      if(window.pageYOffset < 450) {
+        header.classList.add('bg-transparent');
+        header.classList.remove('bg-white')
+      }
+    })
+ 
     const arrImg = ['./img/bg/photo/swipper1.png', 
                 './img/bg/photo/swipper2.png', 
                 './img/bg/photo/swipper3.png', 
@@ -157,7 +168,7 @@ switch (location.pathname) {
       });
     }
     break;
-    case '/inside.github.io/projects/':
+    case '/projects/':
       const dropedText = document.querySelector('#droped-text');
         dropedText.innerHTML = dropedText.textContent.replace(/\S/g, "<span>$&</span>");
 
@@ -189,7 +200,7 @@ switch (location.pathname) {
           delay: anime.stagger(20),
         });
         break;
-    case '/inside.github.io/what/':
+    case '/what/':
       const whoCtn  = document.querySelector('.who-ctn');
       whoCtn.classList.add('anim-bg-right');
 
@@ -198,8 +209,7 @@ switch (location.pathname) {
         const  primaryWrapper = document.querySelector('.who-ctn'),
                primaryTxt = primaryWrapper.querySelector('.primary-text');
              
-        
-        document.addEventListener("scroll", (e) => {
+        document.addEventListener("scroll", () => {
           let inViewport = elementInViewport(primaryTxt);
           if(elementInViewport(primaryWrapper)) {
               inViewport ? primaryTxt.classList.add('anim-bounce') :  primaryTxt.classList.remove('anim-bounce');
@@ -208,5 +218,3 @@ switch (location.pathname) {
        
       break;
 }
-
-
