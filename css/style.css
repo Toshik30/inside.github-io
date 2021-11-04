@@ -19,6 +19,9 @@
     font-size: 42px;
     line-height: 38px;
   }
+  section {
+    overflow-x: hidden;
+  }
   .secondary-smaller-text {
     font-size: 36px;
     line-height: 32.4px;
